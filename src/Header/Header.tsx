@@ -1,8 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./styles/Header.scss";
 
 export const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isPhone, setIsPhone] = useState(window.innerWidth < 600);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsPhone(window.innerWidth < 600);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div className="header">
@@ -18,7 +31,7 @@ export const Header: React.FC = () => {
       </nav>
       <div className="menuContainer">
         <button onClick={() => setIsOpen(!isOpen)} className="menuButton">
-          + Get in touch
+          {isPhone ? "+" : "+ Get in touch"}
         </button>
         <ul className={`menu ${isOpen ? "menuOpen" : "menuClosed"}`}>
           <li className="menuItem">
