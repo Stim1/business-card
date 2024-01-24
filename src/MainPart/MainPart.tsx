@@ -14,7 +14,7 @@ export const MainPart: React.FC = () => {
         ]}
         wrapper="span"
         speed={55}
-        style={{ fontSize: "3em", display: "inline-block", color: "white" }}
+        style={{ display: "inline-block", color: "white" }}
         repeat={Infinity}
       />
       <a

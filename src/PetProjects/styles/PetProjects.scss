@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "ClashDisplay-Medium";
+  src: url("/fonts/ClashDisplay-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "ClashDisplay-Extralight";
+  src: url("/fonts/ClashDisplay-Extralight.otf") format("opentype");
+}
+
+.swipe-to-slide {
+  width: 60%;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: rgba(28, 28, 28, 1);
+  height: 650px;
+  border-radius: 64px;
+  text-align: center;
+  border: 32px solid black;
+  box-sizing: border-box;
+  padding: 20px;
+
+  .images-container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+
+  .gadget-store-reference,
+  .nothing-store-reference {
+    width: 30%;
+    height: auto;
+    margin: 0 10px;
+    transition:
+      transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .link-on-pet-project{
+    text-decoration: none;
+  }
+
+  .big {
+    width: 60%;
+    margin-top: 15px;
+  }
+
+  .slide-arrow {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 35px;
+    height: auto;
+    transition:
+      transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .slide-header {
+    font-family: "ClashDisplay-Medium", sans-serif;
+    color: white;
+    text-align: start;
+    margin-top: 10%;
+    font-size: 30px;
+  }
+
+  .slider-content {
+    font-family: "ClashDisplay-Extralight", sans-serif;
+    font-size: 25px;
+    color: white;
+    line-height: 40px;
+    text-align: start;
+    margin-top: 10px;
+  }
+}

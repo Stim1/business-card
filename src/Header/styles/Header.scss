@@ -1,3 +1,5 @@
+@import "/src/mixins/mixins.scss";
+
 @font-face {
   font-family: "ClashDisplay-Medium";
   src: url("/fonts/ClashDisplay-Medium.otf") format("opentype");
@@ -5,19 +7,43 @@
 
 .header {
   font-family: "ClashDisplay-Medium", sans-serif;
-  font-size: 20px;
+  font-size: 30px;
 
   color: white;
   padding: 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include onPhone {
+    font-size: 15px;
+    padding: 20px;
+  }
+
+  @include onTablet {
+  }
+
+  @include onDesktop {
+  }
 }
 
 .logo {
   display: flex;
   align-items: start;
   cursor: pointer;
+  transition: text-shadow 0.3s ease-in-out;
+
+  @include onPhone {
+    font-size: 15px;
+  }
+
+  &:hover {
+    text-shadow: 
+      0 0 10px #2103fe,   // Перший колір градієнту
+      0 0 20px #cf5fff,   // Перший колір з більшим розмиттям
+      0 0 30px #cb0a81,   // Другий колір градієнту
+      0 0 40px #843d06;   // Другий колір з ще більшим розмиттям
+  }
 }
 
 .navBar {
@@ -26,6 +52,10 @@
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+
+  @include onPhone {
+    margin-left: 45px;
+  }
 }
 
 .navLink {
@@ -58,12 +88,18 @@
 
 .menuButton {
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   font-family: "ClashDisplay-Medium", sans-serif;
   background: none;
   border: none;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
+
+  @include onPhone {
+    font-size: 35px;
+    padding-top: 20px;
+    margin-right: 10px;
+  }
 
   &:hover {
     transform: scale(1.1);
@@ -91,6 +127,9 @@
 
 .menuItem {
   padding-bottom: 8px;
+  @include onPhone {
+    font-size: 15px;
+  }
 }
 .menuLink {
   position: relative;
