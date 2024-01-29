@@ -1,0 +1,81 @@
+@import "/src/mixins/mixins.scss";
+
+@font-face {
+  font-family: "ClashDisplay-Medium";
+  src: url("/fonts/ClashDisplay-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "ClashDisplay-Extralight";
+  src: url("/fonts/ClashDisplay-Extralight.otf") format("opentype");
+}
+
+.technologiesPart {
+  font-family: "ClashDisplay-Medium", sans-serif;
+  display: flex;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: auto;
+  align-items: end;
+  padding-bottom: 150px;
+  @include onPhone {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+  }
+
+  @include onTablet {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+  }
+}
+
+.mainTechnologiesPart {
+  width: 30%;
+  font-family: "ClashDisplay-Medium", sans-serif;
+  font-size: 50px;
+  padding-left: 10%;
+
+  @include onPhone {
+    width: 93%;
+    font-size: 40px;
+  }
+  @include onTablet {
+    width: 80%;
+    padding-right: 13%;
+  }
+}
+
+.secondaryTechnologiesPart {
+  width: 20%;
+  font-family: "ClashDisplay-ExtraLight", sans-serif;
+  font-size: 20px;
+  padding-right: 10%;
+  height: 100px;
+
+  @include onPhone {
+    width: 93%;
+    font-size: 20px;
+    padding-right: 0%;
+    padding-top: 20%;
+  }
+  @include onTablet {
+    width: 93%;
+    font-size: 23px;
+    padding-right: 0%;
+  }
+}
+
+.secondaryTechnologiesPart::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding-right: 15px;
+  background-image: url("../../images/png/2b07-fe0f.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}

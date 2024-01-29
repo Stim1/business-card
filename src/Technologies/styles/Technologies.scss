@@ -1,0 +1,83 @@
+@import "/src/mixins/mixins.scss";
+
+@font-face {
+  font-family: "ClashDisplay-Medium";
+  src: url("/fonts/ClashDisplay-Medium.otf") format("opentype");
+}
+
+.header {
+  overflow: hidden;
+  height: 65px;
+  position: relative;
+}
+
+.ticker-image {
+  height: 80px;
+
+  @include onPhone {
+    height: 50px;
+  }
+
+  @include onTablet {
+    height: 40px;
+    font-size: 30px;
+  }
+}
+
+.ticker-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 90px;
+  transform: translate(100%, 0);
+}
+
+$duration: 30s;
+
+.ticker-wrapper__first-half,
+.ticker-wrapper__second-half {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: ticker $duration infinite linear forwards;
+}
+
+.ticker-wrapper__second-half {
+  animation-delay: $duration/2;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translate(100%, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.technologies-header {
+  color: #ffffff;
+}
+
+.ticker-text {
+  font-family: "ClashDisplay-Medium", sans-serif;
+  font-size: 40px;
+  @include onPhone {
+    display: none;
+  }
+
+  @include onTablet {
+    font-size: 30px;
+  }
+}
+
+.technologies-content {
+  color: #ffffff;
+}

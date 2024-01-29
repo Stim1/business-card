@@ -1,0 +1,105 @@
+@import "/src/mixins/mixins.scss";
+
+@font-face {
+  font-family: "ClashDisplay-Medium";
+  src: url("/fonts/ClashDisplay-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "ClashDisplay-Extralight";
+  src: url("/fonts/ClashDisplay-Extralight.otf") format("opentype");
+}
+
+.footerContent {
+  font-family: "ClashDisplay-Medium", sans-serif;
+  display: flex;
+  padding: 8%;
+  padding-bottom: 4%;
+  justify-content: space-between;
+  align-items: end;
+  color: white;
+}
+
+.footerContent .leftContent,
+.footerContent .cityName {
+  display: inline-block;
+}
+
+.footerContent a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+
+  @include onPhone {
+    font-size: 15px;
+  }
+}
+
+.links-list {
+  font-family: "ClashDisplay-Extralight", sans-serif;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nameThurname {
+  font-size: 30px;
+  padding-bottom: 30%;
+
+  @include onPhone {
+    font-size: 20px;
+    width: 60%;
+    padding-bottom: 20%;
+  }
+}
+
+.socialLink a {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  background-image: linear-gradient(white, white);
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  transition: background-size 0.3s ease;
+
+  @include onPhone {
+    font-size: 15px;
+  }
+}
+
+.socialLink a:hover {
+  background-size: 100% 2px;
+}
+
+.cityName {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.links-list li::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-size: cover;
+}
+
+.telegram::before {
+  background-image: url("../../images/svg/Telegram.svg");
+}
+
+.linkedin::before {
+  background-image: url("../../images/svg/linkedinicon.svg");
+}
+
+.github::before {
+  background-image: url("../../images/svg/github-icon.svg");
+}
+
+.facebook::before {
+  background-image: url("../../images/svg/facebookicon.svg");
+}

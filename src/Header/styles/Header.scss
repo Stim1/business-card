@@ -10,7 +10,7 @@
   font-size: 30px;
 
   color: white;
-  padding: 64px;
+  padding: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,11 +38,14 @@
   }
 
   &:hover {
-    text-shadow: 
-      0 0 10px #2103fe,   // Перший колір градієнту
-      0 0 20px #cf5fff,   // Перший колір з більшим розмиттям
-      0 0 30px #cb0a81,   // Другий колір градієнту
-      0 0 40px #843d06;   // Другий колір з ще більшим розмиттям
+    text-shadow:
+      0 0 10px #2103fe,
+      // Перший колір градієнту
+      0 0 20px #cf5fff,
+      // Перший колір з більшим розмиттям
+      0 0 30px #cb0a81,
+      // Другий колір градієнту
+      0 0 40px #843d06; // Другий колір з ще більшим розмиттям
   }
 }
 
@@ -60,6 +63,7 @@
 
 .navLink {
   position: relative;
+  color: white;
   padding-bottom: 8px;
   text-decoration: none;
 }
@@ -89,6 +93,8 @@
 .menuButton {
   color: white;
   font-size: 30px;
+  display: flex;
+  padding-top: 40px;
   font-family: "ClashDisplay-Medium", sans-serif;
   background: none;
   border: none;
@@ -126,7 +132,6 @@
 }
 
 .menuItem {
-  padding-bottom: 8px;
   @include onPhone {
     font-size: 15px;
   }
