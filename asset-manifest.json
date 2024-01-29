@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/business-card/static/css/main.261b2b80.css",
+    "main.css": "/business-card/static/css/main.049489bb.css",
     "main.js": "/business-card/static/js/main.2938d9e7.js",
     "static/media/nothing-big.png": "/business-card/static/media/nothing-big.616a114e6e854d601872.png",
     "static/media/java-logo-1.png": "/business-card/static/media/java-logo-1.fdabd4e11f1235e4e8e0.png",
@@ -26,11 +26,11 @@
     "static/media/Telegram.svg": "/business-card/static/media/Telegram.3108d9e81ac63b6f4262.svg",
     "static/media/facebookicon.svg": "/business-card/static/media/facebookicon.73a12f08ce163993ab02.svg",
     "static/media/arrow-up-right.svg": "/business-card/static/media/arrow-up-right.0f0585c3023f37acecd157eece0be62a.svg",
-    "main.261b2b80.css.map": "/business-card/static/css/main.261b2b80.css.map",
+    "main.049489bb.css.map": "/business-card/static/css/main.049489bb.css.map",
     "main.2938d9e7.js.map": "/business-card/static/js/main.2938d9e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.261b2b80.css",
+    "static/css/main.049489bb.css",
     "static/js/main.2938d9e7.js"
   ]
 }
