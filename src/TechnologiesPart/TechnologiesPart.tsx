@@ -2,7 +2,7 @@ import "./styles/TechnologiesPart.scss";
 
 export const TechnologiesPart: React.FC = () => {
   return (
-    <div className="technologiesPart">
+    <div id="skills" className="technologiesPart">
       <p className="mainTechnologiesPart">
         I like challenges, so I am always ready to learn new technologies.
       </p>

@@ -4,7 +4,7 @@ import stickerImage from "../photos/sticker.jpg";
 
 export const MainPart: React.FC = () => {
   return (
-    <div className="mainPart">
+    <div id="about" className="mainPart">
       <img className="stickerImage" src={stickerImage} alt="Hello!" />
       <TypeAnimation
         className="mainText"

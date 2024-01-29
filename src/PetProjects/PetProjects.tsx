@@ -31,7 +31,7 @@ export const PetProjects = () => {
   };
 
   return (
-    <div className="swipe-to-slide">
+    <div id="work" className="swipe-to-slide">
       <Slider {...settings}>
         <div className="slide">
           <img

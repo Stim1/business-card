@@ -6,21 +6,31 @@ export const Footer: React.FC = () => {
       <div className="leftContent">
         <div className="nameThurname">2024 Nazar Hnatyuk</div>
         <ul className="links-list">
-          <li className="telegram">
-            <a href="https://link1.com">https://t.me/Nazar_Hnatyuk</a>
+          <li className="telegram socialLink">
+            <a href="https://t.me/Nazar_Hnatyuk">https://t.me/Nazar_Hnatyuk</a>
           </li>
-          <li className="linkedin">
-            <a href="https://link2.com">Nazar Hnatyuk</a>
+          <li className="linkedin socialLink">
+            <a href="https://www.linkedin.com/in/nazar-hnatyuk-48699917b/">
+              Nazar Hnatyuk
+            </a>
           </li>
-          <li className="github">
-            <a href="https://link3.com">github.com/Stim1</a>
+          <li className="github socialLink">
+            <a href="https://github.com/Stim1">github.com/Stim1</a>
           </li>
-          <li className="facebook">
-            <a href="https://link3.com">Nazar Hnatyuk</a>
+          <li className="facebook socialLink">
+            <a href="https://www.facebook.com/nazar.hnatyuk/">Nazar Hnatyuk</a>
           </li>
         </ul>
       </div>
-      <div className="cityName">Lviv, Ukraine</div>
+
+      <a
+        className="cityName"
+        href="https://www.google.com/maps/place/Lviv,+Lviv+Oblast/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Lviv, Ukraine
+      </a>
     </div>
   );
 };

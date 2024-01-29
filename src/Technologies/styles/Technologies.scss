@@ -15,7 +15,7 @@
   height: 80px;
 
   @include onPhone {
-    height: 20px;
+    height: 50px;
   }
 
   @include onTablet {
@@ -70,7 +70,7 @@ $duration: 30s;
   font-family: "ClashDisplay-Medium", sans-serif;
   font-size: 40px;
   @include onPhone {
-    font-size: 15px;
+    display: none;
   }
 
   @include onTablet {

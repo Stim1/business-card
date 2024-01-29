@@ -25,9 +25,15 @@ export const Header: React.FC = () => {
         Hnatyuk
       </h3>
       <nav className="navBar">
-        <li className="navLink">About</li>
-        <li className="navLink">Work</li>
-        <li className="navLink">Skills</li>
+        <a href="#about" className="navLink">
+          About
+        </a>
+        <a href="#work" className="navLink">
+          Work
+        </a>
+        <a href="#skills" className="navLink">
+          Skills
+        </a>
       </nav>
       <div className="menuContainer">
         <button onClick={() => setIsOpen(!isOpen)} className="menuButton">

@@ -1,3 +1,5 @@
+@import "/src/mixins/mixins.scss";
+
 @font-face {
   font-family: "ClashDisplay-Medium";
   src: url("/fonts/ClashDisplay-Medium.otf") format("opentype");
@@ -11,7 +13,8 @@
 .footerContent {
   font-family: "ClashDisplay-Medium", sans-serif;
   display: flex;
-  padding: 10%;
+  padding: 8%;
+  padding-bottom: 4%;
   justify-content: space-between;
   align-items: end;
   color: white;
@@ -24,11 +27,12 @@
 
 .footerContent a {
   color: white;
+  font-size: 20px;
   text-decoration: none;
-}
 
-.footerContent a:hover {
-  text-decoration: underline;
+  @include onPhone {
+    font-size: 15px;
+  }
 }
 
 .links-list {
@@ -38,8 +42,40 @@
   margin: 0;
 }
 
-.footerLink {
-  font-family: "ClashDisplay-Extralight", sans-serif;
+.nameThurname {
+  font-size: 30px;
+  padding-bottom: 30%;
+
+  @include onPhone {
+    font-size: 20px;
+    width: 60%;
+    padding-bottom: 20%;
+  }
+}
+
+.socialLink a {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  background-image: linear-gradient(white, white);
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  transition: background-size 0.3s ease;
+
+  @include onPhone {
+    font-size: 15px;
+  }
+}
+
+.socialLink a:hover {
+  background-size: 100% 2px;
+}
+
+.cityName {
+  font-size: 25px;
+  cursor: pointer;
 }
 
 .links-list li::before {
@@ -52,7 +88,6 @@
   background-size: cover;
 }
 
-/* Стилізація для кожного типу посилання */
 .telegram::before {
   background-image: url("../../images/svg/Telegram.svg");
 }
