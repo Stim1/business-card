@@ -1,12 +1,16 @@
 import { Coursor } from "./Coursor/Coursor";
+import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { MainPart } from "./MainPart";
 import { PetProjects } from "./PetProjects";
+import { Technologies } from "./Technologies/Technologies";
+import { TechnologiesPart } from "./TechnologiesPart";
 import "./styles/App.scss";
 
 export const App: React.FC = () => {
   return (
     <div className="App">
+      <Coursor />
       <Header />
       <div className="mainPartContainer">
         <MainPart />
@@ -14,7 +18,15 @@ export const App: React.FC = () => {
       <div className="slider">
         <PetProjects />
       </div>
-      <Coursor />
+      <div className="technologiesPartContainer">
+        <TechnologiesPart />
+      </div>
+      <div className="technologiesContainer">
+        <Technologies />
+      </div>
+      <div className="footerContainer">
+        <Footer />
+      </div>
     </div>
   );
 };

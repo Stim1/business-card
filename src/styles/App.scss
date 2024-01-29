@@ -1,8 +1,11 @@
+@import "/src/mixins/mixins.scss";
+
 body {
   background-color: black;
 }
 
 .mainPartContainer {
+  margin-top: 5%;
   display: flex;
   justify-content: center;
 }
@@ -13,4 +16,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  @include onPhone {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  @include onTablet {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }

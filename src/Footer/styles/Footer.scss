@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "ClashDisplay-Medium";
+  src: url("/fonts/ClashDisplay-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "ClashDisplay-Extralight";
+  src: url("/fonts/ClashDisplay-Extralight.otf") format("opentype");
+}
+
+.footerContent {
+  font-family: "ClashDisplay-Medium", sans-serif;
+  display: flex;
+  padding: 10%;
+  justify-content: space-between;
+  align-items: end;
+  color: white;
+}
+
+.footerContent .leftContent,
+.footerContent .cityName {
+  display: inline-block;
+}
+
+.footerContent a {
+  color: white;
+  text-decoration: none;
+}
+
+.footerContent a:hover {
+  text-decoration: underline;
+}
+
+.links-list {
+  font-family: "ClashDisplay-Extralight", sans-serif;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLink {
+  font-family: "ClashDisplay-Extralight", sans-serif;
+}
+
+.links-list li::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-size: cover;
+}
+
+/* Стилізація для кожного типу посилання */
+.telegram::before {
+  background-image: url("../../images/svg/Telegram.svg");
+}
+
+.linkedin::before {
+  background-image: url("../../images/svg/linkedinicon.svg");
+}
+
+.github::before {
+  background-image: url("../../images/svg/github-icon.svg");
+}
+
+.facebook::before {
+  background-image: url("../../images/svg/facebookicon.svg");
+}
