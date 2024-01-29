@@ -1,25 +1,36 @@
 {
   "files": {
-    "main.css": "/business-card/static/css/main.955f1cf2.css",
-    "main.js": "/business-card/static/js/main.9a1ed9b0.js",
+    "main.css": "/business-card/static/css/main.70c32881.css",
+    "main.js": "/business-card/static/js/main.2938d9e7.js",
     "static/media/nothing-big.png": "/business-card/static/media/nothing-big.616a114e6e854d601872.png",
+    "static/media/java-logo-1.png": "/business-card/static/media/java-logo-1.fdabd4e11f1235e4e8e0.png",
     "static/media/gadgets-big.png": "/business-card/static/media/gadgets-big.b648810ba6c84b825ba7.png",
     "static/media/ClashDisplay-Medium.otf": "/business-card/static/media/ClashDisplay-Medium.afcc86306d88484344b4.otf",
     "static/media/ClashDisplay-Extralight.otf": "/business-card/static/media/ClashDisplay-Extralight.86f6ced9b205fb5ec080.otf",
+    "static/media/png-transparent-aperture-laboratories-science-technology-laboratory-portal-science-blue-text-computer-thumbnail.png": "/business-card/static/media/png-transparent-aperture-laboratories-science-technology-laboratory-portal-science-blue-text-computer-thumbnail.e71f4c5b0c4306d65355.png",
     "static/media/nothing-small.png": "/business-card/static/media/nothing-small.d872f46c97179fb8c7e3.png",
     "static/media/sticker.jpg": "/business-card/static/media/sticker.2316d08354a29d4f0e72.jpg",
     "static/media/gatdets-small.png": "/business-card/static/media/gatdets-small.a0e4b614fa91086dd1a5.png",
+    "static/media/CSS3_logo.svg.png": "/business-card/static/media/CSS3_logo.svg.a567fe61e781a2683538.png",
+    "static/media/1532556.png": "/business-card/static/media/1532556.94972f53c025a8fb7e2b.png",
+    "static/media/Redux.png": "/business-card/static/media/Redux.543b98d3c75b48613322.png",
+    "static/media/5968381.png": "/business-card/static/media/5968381.af108db04a54d784da9b.png",
+    "static/media/nodejs-logo-vector.svg": "/business-card/static/media/nodejs-logo-vector.6e615d3ef0b5afa070caa165450af385.svg",
     "static/media/slick.svg": "/business-card/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/business-card/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/business-card/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/business-card/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/github-icon.svg": "/business-card/static/media/github-icon.df14d3d7d66b396405b9.svg",
+    "static/media/linkedinicon.svg": "/business-card/static/media/linkedinicon.8b8c2e97873e6dcda8ec.svg",
     "index.html": "/business-card/index.html",
+    "static/media/Telegram.svg": "/business-card/static/media/Telegram.3108d9e81ac63b6f4262.svg",
+    "static/media/facebookicon.svg": "/business-card/static/media/facebookicon.73a12f08ce163993ab02.svg",
     "static/media/arrow-up-right.svg": "/business-card/static/media/arrow-up-right.0f0585c3023f37acecd157eece0be62a.svg",
-    "main.955f1cf2.css.map": "/business-card/static/css/main.955f1cf2.css.map",
-    "main.9a1ed9b0.js.map": "/business-card/static/js/main.9a1ed9b0.js.map"
+    "main.70c32881.css.map": "/business-card/static/css/main.70c32881.css.map",
+    "main.2938d9e7.js.map": "/business-card/static/js/main.2938d9e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.955f1cf2.css",
-    "static/js/main.9a1ed9b0.js"
+    "static/css/main.70c32881.css",
+    "static/js/main.2938d9e7.js"
   ]
 }
