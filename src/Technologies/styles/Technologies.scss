@@ -1,17 +1,20 @@
-@import "/src/mixins/mixins.scss";
+@use "../../mixins/mixins" as *;
 
-@font-face {
-  font-family: "ClashDisplay-Medium";
-  src: url("/fonts/ClashDisplay-Medium.otf") format("opentype");
-}
-
-.header {
+.technologiesTicker {
+  color: white;
+  padding: 60px;
   overflow: hidden;
   height: 65px;
   position: relative;
+
+  @include onPhone {
+    padding: 20px;
+    padding-bottom: 30px;
+  }
 }
 
 .ticker-image {
+  width: auto;
   height: 80px;
 
   @include onPhone {
@@ -50,7 +53,7 @@ $duration: 30s;
 }
 
 .ticker-wrapper__second-half {
-  animation-delay: $duration/2;
+  animation-delay: $duration * 0.5;
 }
 
 @keyframes ticker {

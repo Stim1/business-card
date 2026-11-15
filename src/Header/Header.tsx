@@ -1,21 +1,30 @@
-import { useEffect, useState } from "react";
+"use client";
+
+import { useEffect, useRef, useState } from "react";
 import "./styles/Header.scss";
 
 export const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const [isPhone, setIsPhone] = useState(window.innerWidth < 600);
+  const toggleRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsPhone(window.innerWidth < 600);
+    if (!isOpen) {
+      return;
+    }
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setIsOpen(false);
+        toggleRef.current?.focus();
+      }
     };
 
-    window.addEventListener("resize", handleResize);
+    document.addEventListener("keydown", handleKeyDown);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      document.removeEventListener("keydown", handleKeyDown);
     };
-  }, []);
+  }, [isOpen]);
 
   return (
     <div className="header">
@@ -36,10 +45,19 @@ export const Header: React.FC = () => {
         </a>
       </nav>
       <div className="menuContainer">
-        <button onClick={() => setIsOpen(!isOpen)} className="menuButton">
-          {isPhone ? "+" : "+ Get in touch"}
+        <button
+          ref={toggleRef}
+          type="button"
+          onClick={() => setIsOpen(!isOpen)}
+          className="menuButton"
+          aria-label="Get in touch"
+          aria-expanded={isOpen}
+          aria-controls="contact-links"
+        >
+          <span aria-hidden="true">+</span>
+          <span className="menuButtonLabel">&nbsp;Get in touch</span>
         </button>
-        <ul className={`menu ${isOpen ? "menuOpen" : "menuClosed"}`}>
+        <ul id="contact-links" className="menu" hidden={!isOpen}>
           <li className="menuItem">
             <a className="menuLink" href="mailto:hnatyuk.nazariy@gmail.com">
               Email
@@ -50,7 +68,7 @@ export const Header: React.FC = () => {
               className="menuLink"
               href="https://www.linkedin.com/in/nazar-hnatyuk-48699917b/"
             >
-              Linkedin
+              LinkedIn
             </a>
           </li>
           <li className="menuItem">

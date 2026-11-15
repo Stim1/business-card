@@ -4,7 +4,9 @@ export const Footer: React.FC = () => {
   return (
     <div className="footerContent">
       <div className="leftContent">
-        <div className="nameThurname">2024 Nazar Hnatyuk</div>
+        <div className="nameThurname">
+          {new Date().getFullYear()} Nazar Hnatyuk
+        </div>
         <ul className="links-list">
           <li className="telegram socialLink">
             <a href="https://t.me/Nazar_Hnatyuk">https://t.me/Nazar_Hnatyuk</a>

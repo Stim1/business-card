@@ -1,4 +1,4 @@
-@import "/src/mixins/mixins.scss";
+@use "../mixins/mixins" as *;
 
 html {
   scroll-behavior: smooth;

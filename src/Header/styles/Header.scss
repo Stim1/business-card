@@ -1,9 +1,4 @@
-@import "/src/mixins/mixins.scss";
-
-@font-face {
-  font-family: "ClashDisplay-Medium";
-  src: url("/fonts/ClashDisplay-Medium.otf") format("opentype");
-}
+@use "../../mixins/mixins" as *;
 
 .header {
   font-family: "ClashDisplay-Medium", sans-serif;
@@ -103,23 +98,20 @@
   }
 }
 
+.menuButtonLabel {
+  @include onPhone {
+    display: none;
+  }
+}
+
 .menu {
   list-style: none;
   display: flex;
   flex-direction: column;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
 }
 
-.menuOpen {
-  max-height: 115px;
-}
-
-.menuClosed .menu {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
+.menu[hidden] {
+  display: none;
 }
 
 .menuItem {
