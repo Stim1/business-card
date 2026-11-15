@@ -1,9 +1,4 @@
-@import "/src/mixins/mixins.scss";
-
-@font-face {
-  font-family: "ClashDisplay-Medium";
-  src: url("/fonts/ClashDisplay-Medium.otf") format("opentype");
-}
+@use "../../mixins/mixins" as *;
 
 .stickerImage {
   height: 150px;
@@ -12,7 +7,7 @@
   @include onPhone {
     height: 80px;
     width: 80px;
-    padding-right: 75%;
+    align-self: flex-start;
   }
 
   @include onTablet {

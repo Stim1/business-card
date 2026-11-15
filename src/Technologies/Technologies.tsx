@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 import "./styles/Technologies.scss";
 import react from "../images/png/png-transparent-aperture-laboratories-science-technology-laboratory-portal-science-blue-text-computer-thumbnail.png";
 import redux from "../images/png/Redux.png";
@@ -11,27 +11,33 @@ import typescript from "../images/png/5968381.png";
 
 export const Technologies: React.FC = () => {
   return (
-    <header className="header">
+    <div className="technologiesTicker">
       <div className="ticker-container ticker-wrapper__first-half">
-        <img src={react} alt="BorisCooper" className="ticker-image" />
+        <Image src={react} alt="React" className="ticker-image" />
         <p className="ticker-text">React</p>
-        <img src={redux} alt="BorisCooper" className="ticker-image" />
+        <Image src={redux} alt="Redux" className="ticker-image" />
         <p className="ticker-text">Redux</p>
-        <img src={java} alt="BorisCooper" className="ticker-image" />
+        <Image src={java} alt="Java" className="ticker-image" />
         <p className="ticker-text">Java</p>
-        <img src={express} alt="BorisCooper" className="ticker-image" />
+        <Image src={express} alt="Express.js" className="ticker-image" />
         <p className="ticker-text">Express.js</p>
       </div>
       <div className="ticker-container ticker-wrapper__second-half">
-        <img src={html} alt="BorisCooper" className="ticker-image" />
+        <Image src={html} alt="HTML5" className="ticker-image" />
         <p className="ticker-text">HTML</p>
-        <img src={css} alt="BorisCooper" className="ticker-image" />
+        <Image src={css} alt="CSS3" className="ticker-image" />
         <p className="ticker-text">CSS3</p>
-        <img src={node} alt="BorisCooper" className="ticker-image" />
+        <Image
+          src={node}
+          width={80}
+          height={80}
+          alt="Node.js"
+          className="ticker-image"
+        />
         <p className="ticker-text">Node.js</p>
-        <img src={typescript} alt="BorisCooper" className="ticker-image" />
+        <Image src={typescript} alt="TypeScript" className="ticker-image" />
         <p className="ticker-text">Typescript</p>
       </div>
-    </header>
+    </div>
   );
 };

@@ -4,76 +4,46 @@
   "private": true,
   "homepage": "https://Stim1.github.io/business-card/",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.70",
-    "@types/react": "^18.2.47",
-    "@types/react-dom": "^18.2.18",
-    "react": "^18.2.0",
-    "react-animated-cursor": "^2.11.2",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "react-slick": "^0.29.0",
+    "next": "^16.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-slick": "^0.31.0",
     "react-type-animation": "^3.2.0",
-    "slick-carousel": "^1.8.1",
-    "swiper": "^11.0.5",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "slick-carousel": "^2.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "dev": "next dev --hostname 127.0.0.1",
+    "start": "next dev --hostname 127.0.0.1",
+    "build": "next build",
+    "test": "jest --runInBand",
+    "test:e2e": "playwright test",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
     "format": "prettier . --ignore-path .gitignore --write",
-    "fix-style": "npm run format & npm run lint",
-    "lint": "eslint . --ignore-path .gitignore --fix"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out --dotfiles"
   },
   "devDependencies": {
-    "@mate-academy/eslint-config-react-typescript": "^1.0.13",
-    "@types/jest": "^29.5.11",
-    "@types/node": "^20.10.4",
-    "@types/react": "^18.2.43",
-    "@types/react-dom": "^18.2.17",
-    "@types/react-redux": "^7.1.32",
-    "@types/react-slick": "^0.23.12",
-    "gh-pages": "^6.1.1",
-    "husky": "^8.0.3",
-    "lint-staged": "12.4.0",
-    "prettier": "^3.1.0",
-    "sass": "^1.69.7",
-    "tailwindcss": "^3.3.6",
-    "typescript": "^5.3.3"
+    "@playwright/test": "^1.65.1",
+    "@testing-library/dom": "^10.4.2",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.10",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/react-slick": "^0.23.13",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.4.6",
+    "gh-pages": "^6.3.0",
+    "jest": "^30.5.2",
+    "jest-environment-jsdom": "^30.5.2",
+    "prettier": "^3.10.1",
+    "sass": "^1.108.2",
+    "typescript": "~6.0.3"
   },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "lint-staged": {
-    "*.ts": "npm run lint",
-    "*.tsx": "npm run lint"
+  "engines": {
+    "node": "^20.19.0 || >=22.0.0"
   }
 }

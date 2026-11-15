@@ -1,14 +1,4 @@
-@import "/src/mixins/mixins.scss";
-
-@font-face {
-  font-family: "ClashDisplay-Medium";
-  src: url("/fonts/ClashDisplay-Medium.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "ClashDisplay-Extralight";
-  src: url("/fonts/ClashDisplay-Extralight.otf") format("opentype");
-}
+@use "../../mixins/mixins" as *;
 
 .footerContent {
   font-family: "ClashDisplay-Medium", sans-serif;
